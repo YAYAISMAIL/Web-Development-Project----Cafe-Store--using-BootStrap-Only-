@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+
+/*-----Font+Style ------- Calculation of the padding and border sizing-----*/
+*{
+    font-family: 'Scada', sans-serif;
+    box-sizing: border-box !important;
+}
+
+:root{
+    --bs-nav-link-font-size: 18px !important;
+    --nav-text-color: #fff;
+    --nav-text-active : #f76d37;
+    --galler-content-overlay: rgba(255, 255, 255, 0.65);
+}
+
+/*------------------------Preprocessor Directives----------------------------*/
+@media screen and (max-width: 992px) {
+    .m-query-auto{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 6px;
+        text-align: center;
+    }
+
+    .m-360-100{
+        width: 100%;
+        margin: 20px auto;
+
+    }
+
+    .fs-query-p{
+        font-size: 15px !;
+    }
+}
+
+
+/*Start --- Css --- Coding*/
+
+/*Start => Navbar customizing*/
+    /*Start => (.nav-link: color)*/
+    .navbar .container-fluid  .features .nav-link{
+        color: var(--nav-text-color);
+        transition: color 0.55s ease-in-out;
+    }
+    /*End => (.nav-link: color)*/
+
+    /*Start => (.nav-link .active: color)*/
+    .navbar .container-fluid  .features .active{
+        color: var(--nav-text-active);
+    }
+    /*End => (.nav-link .active: color)*/
+
+    /*Start => (.nav-link:hover)*/
+    .navbar .container-fluid  .features .nav-link:hover{
+        color: var(--nav-text-active);
+    }
+    /*End => (.nav-link:hover)*/
+/*End => Navbar customizing*/
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+/*Start => Under-Navbar customizing*/
+    /*Start => customizing Warpper*/
+    .Under-nav .warpper{
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    .Under-nav .warpper .box{
+        width: 50%;
+        padding: 1px;
+        /* border: 4px solid red !important; */
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+    }
+
+    .Under-nav .warpper .box .description{
+        /* border: 4px solid !important; */
+        width: 70%;
+        height: fit-content;
+        margin-left: auto;
+    }
+
+    .Under-nav .warpper .box .description .fs-15{
+        font-size: 16px;
+    }
+    /*Start =>  Under-nav content Button*/
+    .Under-nav .warpper .box .description .learn-more .btn{
+        font-size: 16px;
+        transition: all 0.55s ease-in-out;
+    }
+    .Under-nav .warpper .box .description .learn-more .btn:hover{
+        background-color: var(--nav-text-active) !important;
+    }
+    /*End => Under-nav content Button**/
+
+
+    /*Start = Customizing Carosel*/
+        /*Start = Positioning Buttons*/
+        .Under-nav .warpper .carousel-control-out {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 25px;
+        }
+        /*End = Positioning Buttons*/
+
+        /*Start = Customizing Buttons:hover*/
+        .Under-nav .warpper .carousel-control-out button{
+            bottom: 0;
+            font-size: 16px !important;
+            border: none;
+            transition: all 0.55s ease-in-out;
+        }
+
+        .Under-nav .warpper .carousel-control-out button:hover{
+            background-color: var(--nav-text-active);
+            color: var(--nav-text-color);
+        }
+        /*End = Customizing Buttons:hover*/
+/*End => Under-Navbar customizing*/
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*start => sec1*/
+    .sec1 .container .row .active-color{
+        color: var(--nav-text-active);
+    }
+
+    .sec1 .container .row .p-font-size{
+        font-size: 16px;
+    }
+
+    /*Start =>  About section Button*/
+    .sec1 .container .row .Read-more .btn{
+        font-size: 16px;
+        transition: all 0.55s ease-in-out;
+    }
+    .sec1 .container .row .Read-more .btn:hover{
+        background-color: var(--nav-text-active) !important;
+    }
+    /*End =>    About section Button**/
+/*end => sec1*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*start => sec2*/
+    /*Start => Adding sec1 Title color*/
+    .sec2 .Our-Gallery .active-color{
+        color: var(--nav-text-active);
+    }
+
+    /*Start => Custmizing sec1 p Font size*/
+    .sec2 .Our-Gallery .p-font-size{
+        font-size: 16px;
+    }
+
+    /*Start => Castumizing Overlay*/
+        .sec2 .container .row .combo{
+            position: relative;
+        }
+
+        .sec2 .container .row .combo:hover .overlay{
+            opacity: 1;
+        }
+
+        .sec2 .container .row .combo .overlay{
+            background-color: var(--galler-content-overlay);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.55s ease;
+        }
+    /*End => Castumizing Overlay*/
+
+    /*Start =>  About section Button*/
+    .sec2 .See-more .btn{
+        font-size: 16px;
+        transition: all 0.55s ease-in-out;
+    }
+    .sec2 .See-more .btn:hover{
+        background-color: var(--nav-text-active) !important;
+    }
+    /*End =>    About section Button**/
+/*end => sec2*/
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*start => sec3*/
+    /*Start => Custumizing Size of Section 3*/
+    .sec3{
+        height: 70vh;
+        background-color: #f76d37;
+        margin: 24px 0px;
+    }
+    .sec3 .warpper{
+        height: 100%;
+        background-image: url(../../img/services-bg.png);
+        background-size:  50% 75%;
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+
+/*end => sec3*/
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*Start => Sec4*/
+    .sec4{
+        height: 70vh;
+        /* background-color: yellow; */
+    }
+
+    .sec4 .container {
+        height: 100%;
+        position: relative;
+        /* border: 2px solid red; */
+    }
+
+    .sec4 .container .active-color{
+        color: #f76d37;
+    }
+
+    .sec4 .container .p-font-szie{
+        font-size: 16px;
+    }
+
+    .sec4 .container .carousel{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+        height: 300px;
+    }
+
+    .sec4 .container .carousel .user-comment{
+        /* border: 10px solid green; */
+        height: 80%;
+        font-size: 16px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sec4 .container .carousel .user-comment .carousel-inner{
+        /* border: 1PX solid red; */
+        height: 70%;
+        position: relative;
+        padding: 1rem;
+        overflow: visible;
+    }
+
+    .sec4 .container .carousel .user-comment .carousel-inner .carousel-item{
+        position: relative;
+    }
+    .sec4 .container .carousel .user-comment .carousel-inner .carousel-item p{
+        overflow: hidden;
+    }
+
+    .sec4 .container .carousel .user-comment .carousel-inner .carousel-item span{
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        font-size: 30px;
+        font-weight: 700;
+        transform: translateY(-115%) translateX(95%);
+        color: #f76d37;
+    }
+
+
+
+    .sec4 .container .carousel .switch-control{
+        /* border: 5px solid blue; */
+        height: 20%;
+
+    }
+
+    .sec4 .container .carousel .switch-control button{
+        transition: all 0.55s ease;
+        color: var(--nav-text-active);
+    }
+
+    .sec4 .container .carousel .switch-control button:focus{
+    background-color: var(--nav-text-active);
+    color: #000;
+    }
+/*End => Sec4*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*Start => Sec5*/
+    .sec5{
+       
+    }
+
+    .sec5 .container-fluid .row div form{
+        background-image: url(../../img/img-form-bg.png);
+        background-position: center center;
+        background-size: cover;
+
+    }
+
+    .sec5 .container-fluid .row div form input{
+        margin: 0.5rem 0;
+        padding: 0 1rem;
+    }
+
+    .sec5 .container-fluid .row div form textarea{
+        resize: none;
+        margin: 0.5rem 0;
+        padding: 3rem 1rem 0 1rem;
+        
+    }
+
+    .sec5 .container-fluid .row div form div button{
+                background-color: var(--nav-text-active) !important;
+                color: var(--nav-text-color);
+                transition: all 0.55s ease;
+    }
+    .sec5 .container-fluid .row div form div button:hover{
+                background-color: var(--nav-text-color) !important;
+                color: #000;
+    }
+/*End=> Sec5*/
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*Start => Sec6*/
+
+.sec6 h3{
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+.sec6 p{
+    font-size: 16px;
+}
+
+
+
+.sec6 .content-info .container .row div .footer-link{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.55s ease-in-out;
+    font-size: 16px;
+    line-height: 12px;
+}
+
+.sec6 .content-info .container .row div .footer-link:hover{
+    color: var(--nav-text-active);
+}
